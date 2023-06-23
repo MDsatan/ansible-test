@@ -1,0 +1,579 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b749f0387f98d20845d2e5477f1c81bdc3401262d71d394ac537dbfe722a2c6",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38d77a1592e4e4b15229b147b016d326f6d43fd112e76e7c84efa73636fe8b5e",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/controls_list.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e0c87896d7f09e888e601e9d0dc63e24831c6edc652e6365cccffa320eb41dcc",
+   "format": 1
+  },
+  {
+   "name": "docs/controls_list_win.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "96cdb11f4695c274d391d108c8d3dae1aa50d88b2d6d9e40a1fdd4eddc640633",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f306dcfe2f80179dfcc173130d0383083336c8d76edd764cb359863f2ac1df2b",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b7f5f29e34aae48c8407dc566357b96660893b9cd5ba68318a4eed2c32e30a8",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/banner",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4da969ec23755a48e54352b65ca358e6d5f14f673d981c39948125d0b1c351db",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/issue",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4da969ec23755a48e54352b65ca358e6d5f14f673d981c39948125d0b1c351db",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/rsyslog.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41c17b77c5b3bc4b2c18dd495d0078268091d67d11ce2cc694b1bc83ca3bae80",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/duplicate_groups.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bc5778a6615f0616c8bac78426ea4ce328dd701467d10a9ce12acabc8de3e5e",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/duplicate_guids.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d585e9ded39a477879dac291cccf2c5174f6d531d2579248e3558185d77b12ba",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/duplicate_uids.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c251a88a606373c9ee0e061e9ab329edd0625a96857cd5846493615ea917c940",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/duplicate_users.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d70890d2eb08adb039c4bf5dee4c10563d9d08fcdddf06c76340da1718ee5127",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/non_existant_homedirs.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03fb886d3f85597aa6e23ffcb817d17c9d0c5786d9174eb824d3bcf7f8881f6b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/path_check.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38e91f5019f663a65394bc669a28e92ab363326f764572eca1539ec1a0852a7a",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/files/undefined_groups.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "484e7acf012d318ff08f002b97807473f2f906d914f145ef92c6f8753e1f0adb",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a701e963f68153f2a366018711ffa8892d2a4b683a7a3941e46e54037c1ccbb5",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bbb2c4a82581b818309523bdd56fc8bff114428b498c9fa40c067c6d03a18583",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-CentOS-7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a88ec92d2f738b81ab23bbaed9d442931bf8a822b527f920b16f927b3a227f4b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-CentOS-8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac821153c0f2244cecf56341da692b6a5d4327c5876049984dd14592916cb981",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Fedora-31.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac821153c0f2244cecf56341da692b6a5d4327c5876049984dd14592916cb981",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Fedora-32.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac821153c0f2244cecf56341da692b6a5d4327c5876049984dd14592916cb981",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Microsoft Windows 10 Pro.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a4a16b3364d841181b8e0a5bbe0505fee7cd27f6a946176dab4825e5de423b2",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Oracle-7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33c0a2a5155ff141e3d87742f27591d19d6740350ae0febffce04fe3b52caffb",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-RedHat-7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a88ec92d2f738b81ab23bbaed9d442931bf8a822b527f920b16f927b3a227f4b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-RedHat-8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac821153c0f2244cecf56341da692b6a5d4327c5876049984dd14592916cb981",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-RedHat-9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "49de83a0f0d8bd719afaff9b80967b4492eff7cc057b87d19afbe93ebd53195e",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-SLES-15.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36382be1a74fa963595e922919eee509a6788b6a5518c4837696a9648efc7aa6",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Ubuntu-18.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80b3cd36d182cd3b80c3496700a333d54e7ba54dcdb46992d6ae15bebd20e13d",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Ubuntu-20.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bee81a655cc1baeb03142a6ab475d3cd1bc4626cb302c19e176f68d84a53758b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-Ubuntu-22.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "070d99bb2b8afb97856ff703bd8dabfd0e6a3a4b7df7c2b3df8bc6cf5d2de862",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8a6c16c86832252159cd717b32c9c64f5c0c3c03f43f456092c6c021d4ee134d",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/MS-Server-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce5a0e73b526961966a7e039b9649e9e87b3cf0a5e95078d869bb1858d5ec831",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/SLES-addons.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25925b866c7ce8209c224c53c61d7226264003ceaa93c26658f394b27367e417",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/redhat-7-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a268d989f0d8be93fdce10b460a8a7fe964b062618c96b418da38bedb6d89d88",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/redhat-8-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38dba4ef2cb7e7f154cb29fe00f626d00b06e0dae1eafe6e1b68dcfe34953cd3",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/redhat-9-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa47a22bbfa1fdc2fbb69a69366264debcb7e27eee1c746527dfcc7f59e18737",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/ubuntu-18-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea0f37fcee88344556500867f066d9b0a58baec51e50c62325407b518a5b5c58",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/type-files/ubuntu-22-type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f860521d0871951a1dc62d44911b3bbe2ce609f8f14489cc182a975e4ae8a26",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/tasks/CIS-OracleLinux-8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac821153c0f2244cecf56341da692b6a5d4327c5876049984dd14592916cb981",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/aidecheck.service",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69f23f5edd7064e5cb5b435b0138a32089a08fb308f16127a830fdd67697147f",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/aidecheck.timer",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ab556ebb459b8ad2c0346b19f690b143607c80bb7fb242c2632f664cce9501b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/MAC-policy.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c433a377f3ece206807bdbe3c27bc4ac29263a8945f6c7bf417a642eb799706",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/bad-file-access.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b4dbbbf5dc9de512710aa86e2f1e776f6dc1478ecdb87cded6bc81ae24490cc",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/chacl.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79fb241385ffe323bfc216c487767e1ab7754018d019a6bfbde7e8471841e2fd",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/chcon.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5545722b973030b6692e7154701e8e4a3399eefd03f85e13502d95d1542d3fb",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/dac.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf044887ffecddd9a6076762576f516c1ec91fc6d726b96985a1096d23eb3e71",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/datetime.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f144d92379024dfc5ec359c19fe1f294a451d96f95f15a6ab58a26a3a899ff7",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/delete.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a7a330979a977d893bfb1d752a3f052b87ca6f8e74532a2a1a5e64c5e8feef80",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/file-system-mounts.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b1876b3aa0c202c2387fa730556f552d120602447a323e65644448898eaef4c",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/login.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24ead3b3c4f77c7cc71cedfb6c681268e6ced15e4b314f5e200e161cf37d3c28",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/modules.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1208fa26fb6d2ce69c00ea06d6ed4e7748647bb57b7e346953273db091824e47",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/network.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50ad354f87609b787bd09d2f522e2338afa213c93e61a07998089e24effc535b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/sessions.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c426ea855908a954fba79e0b2550bbf00720460258c2b8a7f2ff2ee0b70800f",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/setfacl.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "006b7d20f41d3fdb2b760783c991c1c723c9a0c72315865c24aa54878ff6fe1d",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/sudolog.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df1ffcd01d8a66bd8c48328ed12034c11dfb4be5d620b1ec9b2f4d85fe5b10d9",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/user-group-info.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35ec41febfcbf5841de678e365628927e0b115eae9ad8313bd9aa52d51242cd2",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/user_emulation.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e696c5a4183c346943f29cb4f26a5f291a9f8fa93850dd0c8e1f109a9ba50775",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/audit_rules/usermod.rules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "62f905c6018b57eff9a40d36f264406912b1dc83c906c80d308630430494f44c",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/chrony.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b0d1adbd617a68c864415176e6c25af48338f334c2e98e8039269672c1832a8",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/chronyd",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "733ab2b90dc6318edbdb20585e2be6e3a6446adde44a63683f213419eef216c6",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/chronyd.ubuntu",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "40593f2b5a185bd0f3acf9b4d9d30d5c96d2fc9c1633b01fc2002cad9c4fb839",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/ntp.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89171d28c7339a26fdafa32862b2c37afe477224391a08e6067e736717522e9b",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/ntpd",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54cd9090fd244498b205fa59a4fea8c5e4a0ecf86a9bbab3d099a04bb843aa70",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/templates/timesyncd.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33d67ff3866e5b7d8398ac6a6ee7cc8e18f8344d49d42513737f22889bb52463",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abede06effc53830c51de49308f46fc624571acf7bba979c69462c4a7f9fdd1a",
+   "format": 1
+  },
+  {
+   "name": "roles/cis_security/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3578dad56e75e1081a64c4162f22bdafa6a42913090f97f4fcea104330ea2e2",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02beaceb2818bba79c407f71f28809c81bf0d3d14ca57db2124201384cb6c011",
+   "format": 1
+  }
+ ],
+ "format": 1
+}
