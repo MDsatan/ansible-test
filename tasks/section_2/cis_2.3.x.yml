@@ -43,35 +43,6 @@
       - rule_2.3.3
       - talk
 
-- name: "2.3.4 | PATCH | Ensure telnet client is not installed"
-  ansible.builtin.package:
-      name: telnet
-      state: absent
-  when:
-      - ubtu22cis_rule_2_3_4
-      - not ubtu22cis_telnet_required
-  tags:
-      - level1-server
-      - level1-workstation
-      - automated
-      - patch
-      - rule_2.3.4
-      - telnet
-
-- name: "2.3.5 | PATCH | Ensure LDAP client is not installed"
-  ansible.builtin.package:
-      name: ldap-utils
-      state: absent
-  when:
-      - ubtu22cis_rule_2_3_5
-      - not ubtu22cis_ldap_clients_required
-  tags:
-      - level1-server
-      - level1-workstation
-      - automated
-      - patch
-      - rule_2.3.5
-      - ldap
 
 - name: "2.3.6 | PATCH | Ensure RPC is not installed"
   ansible.builtin.package:

@@ -52,16 +52,6 @@
   tags:
       - always
 
-- name: Check ubtu22cis_bootloader_password_hash variable has been changed
-  ansible.builtin.assert:
-      that: ubtu22cis_bootloader_password_hash.find('grub.pbkdf2.sha512') != -1 and ubtu22cis_bootloader_password_hash != 'grub.pbkdf2.sha512.changethispassword'
-      msg: "This role will not be able to run single user password commands as ubtu22cis_bootloader_password_hash variable has not been set correctly"
-  when:
-      - ubtu22cis_set_boot_pass
-      - ubtu22cis_rule_1_4_1
-  tags:
-      - always
-
 - name: Check ubtu22cis_grub_user password variable has been changed
   block:
       - name: Check ubtu22cis_grub_user password variable has been changed | check password is set

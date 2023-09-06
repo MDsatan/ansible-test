@@ -1,20 +1,5 @@
 ---
 
-- name: "1.8.1 | PATCH | Ensure GNOME Display Manager is removed"
-  ansible.builtin.package:
-      name: gdm3
-      state: absent
-  when:
-      - ubtu22cis_rule_1_8_1
-      - not ubtu22cis_desktop_required
-      - ubtu22cis_disruption_high
-      - "'gdm3' in ansible_facts.packages"
-  tags:
-      - level2-server
-      - manual
-      - patch
-      - rule_1.8.1
-      - gnome
 
 - name: "1.8.2 | PATCH | Ensure GDM login banner is configured"
   ansible.builtin.lineinfile:

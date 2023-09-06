@@ -151,23 +151,6 @@
       - ftp
       - service
 
-- name: "2.2.9 | PATCH | Ensure HTTP server is not installed"
-  ansible.builtin.package:
-      name: apache2
-      state: absent
-  when:
-      - ubtu22cis_rule_2_2_9
-      - not ubtu22cis_httpd_server
-      - "'apache2' in ansible_facts.packages"
-  tags:
-      - level1-server
-      - level1-workstation
-      - automated
-      - patch
-      - rule_2.2.9
-      - httpd
-      - service
-
 - name: "2.2.10 | PATCH | Ensure IMAP and POP3 server are not installed"
   ansible.builtin.package:
       name: ['dovecot-imapd', 'dovecot-pop3d']
