@@ -1,7 +1,0 @@
-- hosts: hosts
-  user: azureuser
-  become: yes
-  # vars_files:
-  #  - ../vars/database.yaml
-  roles:
-    - role: ../roles/cis_security/
