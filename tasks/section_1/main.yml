@@ -24,11 +24,11 @@
 - name: "SECTION | 1.1.8 | configure /dev/shm"
   ansible.builtin.import_tasks: cis_1.1.8.x.yml
 
-- name: "SECTION | 1.1.9 | configure software updates"
-  ansible.builtin.import_tasks: cis_1.1.9.yml
+# - name: "SECTION | 1.1.9 | configure software updates"
+#   ansible.builtin.import_tasks: cis_1.1.9.yml
 
-- name: "SECTION | 1.1.10 | Disable USB storage"
-  ansible.builtin.import_tasks: cis_1.1.10.yml
+# - name: "SECTION | 1.1.10 | Disable USB storage"
+#   ansible.builtin.import_tasks: cis_1.1.10.yml
 
 - name: "SECTION | 1.2 | Configure Software Updates"
   ansible.builtin.import_tasks: cis_1.2.x.yml
