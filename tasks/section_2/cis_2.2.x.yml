@@ -1,18 +1,18 @@
 ---
 
-- name: "2.2.1 | PATCH | Ensure X Window System is not installed"
-  ansible.builtin.package:
-      name: xserver-xorg*
-      state: absent
-  when:
-      - ubtu22cis_rule_2_2_1
-      - not ubtu22cis_desktop_required
-  tags:
-      - level1-server
-      - automated
-      - patch
-      - rule_2.2.1
-      - xwindows
+# - name: "2.2.1 | PATCH | Ensure X Window System is not installed"
+#   ansible.builtin.package:
+#       name: xserver-xorg*
+#       state: absent
+#   when:
+#       - ubtu22cis_rule_2_2_1
+#       - not ubtu22cis_desktop_required
+#   tags:
+#       - level1-server
+#       - automated
+#       - patch
+#       - rule_2.2.1
+#       - xwindows
 
 - name: "2.2.2 | PATCH | Ensure Avahi Server is not installed"
   block:
