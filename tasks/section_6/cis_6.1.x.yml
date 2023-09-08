@@ -282,32 +282,32 @@
             - ubtu22cis_6_1_12_suid_executables_flatten | length > 0
             - not ubtu22cis_suid_adjust
 
-      - name: "6.1.12 | PATCH | Audit SUID executables | Remove SUID bit"
-        ansible.builtin.file:
-            path: "{{ item }}"
-            mode: 'u-s'
-        with_items:
-            - "{{ ubtu22cis_6_1_12_suid_executables_flatten }}"
-        when:
-            - ubtu22cis_suid_adjust
-            - ubtu22cis_6_1_12_suid_executables_flatten | length > 0
+#       - name: "6.1.12 | PATCH | Audit SUID executables | Remove SUID bit"
+#         ansible.builtin.file:
+#             path: "{{ item }}"
+#             mode: 'u-s'
+#         with_items:
+#             - "{{ ubtu22cis_6_1_12_suid_executables_flatten }}"
+#         when:
+#             - ubtu22cis_suid_adjust
+#             - ubtu22cis_6_1_12_suid_executables_flatten | length > 0
 
-      - name: "6.1.12 | AUDIT | Audit SUID executables | Warn Count"
-        ansible.builtin.import_tasks: warning_facts.yml
-        when:
-            - ubtu22cis_6_1_12_suid_executables_flatten | length > 0
-            - not ubtu22cis_suid_adjust
-        vars:
-            warn_control_id: '6.1.12'
-  when:
-      - ubtu22cis_rule_6_1_12
-  tags:
-      - level1-server
-      - level1-workstation
-      - manual
-      - audit
-      - rule_6.1.12
-      - permissions
+#       - name: "6.1.12 | AUDIT | Audit SUID executables | Warn Count"
+#         ansible.builtin.import_tasks: warning_facts.yml
+#         when:
+#             - ubtu22cis_6_1_12_suid_executables_flatten | length > 0
+#             - not ubtu22cis_suid_adjust
+#         vars:
+#             warn_control_id: '6.1.12'
+#   when:
+#       - ubtu22cis_rule_6_1_12
+#   tags:
+#       - level1-server
+#       - level1-workstation
+#       - manual
+#       - audit
+#       - rule_6.1.12
+#       - permissions
 
 - name: "6.1.13 | AUDIT | Audit SGID executables"
   block:

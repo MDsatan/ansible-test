@@ -124,45 +124,45 @@
       - rule_3.5.1.5
       - ufw
 
-- name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports"
-  block:
-      - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Get list of open ports"
-        ansible.builtin.shell: ss -4tuln
-        changed_when: false
-        failed_when: false
-        check_mode: false
-        register: ubtu22cis_3_5_1_6_open_listen_ports
+# - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports"
+#   block:
+#       - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Get list of open ports"
+#         ansible.builtin.shell: ss -4tuln
+#         changed_when: false
+#         failed_when: false
+#         check_mode: false
+#         register: ubtu22cis_3_5_1_6_open_listen_ports
 
-      - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Get list of firewall rules"
-        ansible.builtin.shell: ufw status
-        changed_when: false
-        failed_when: false
-        check_mode: false
-        register: ubtu22cis_3_5_1_6_firewall_rules
+#       - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Get list of firewall rules"
+#         ansible.builtin.shell: ufw status
+#         changed_when: false
+#         failed_when: false
+#         check_mode: false
+#         register: ubtu22cis_3_5_1_6_firewall_rules
 
-      - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Message out settings"
-        ansible.builtin.debug:
-            msg:
-                - "Warning!! Below are the listening ports and firewall rules"
-                - "Please create firewall rule for any open ports if not already done"
-                - "*****---Open Listen Ports---*****"
-                - "{{ ubtu22cis_3_5_1_6_open_listen_ports.stdout_lines }}"
-                - "*****---Firewall Rules---*****"
-                - "{{ ubtu22cis_3_5_1_6_firewall_rules.stdout_lines }}"
+#       - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Message out settings"
+#         ansible.builtin.debug:
+#             msg:
+#                 - "Warning!! Below are the listening ports and firewall rules"
+#                 - "Please create firewall rule for any open ports if not already done"
+#                 - "*****---Open Listen Ports---*****"
+#                 - "{{ ubtu22cis_3_5_1_6_open_listen_ports.stdout_lines }}"
+#                 - "*****---Firewall Rules---*****"
+#                 - "{{ ubtu22cis_3_5_1_6_firewall_rules.stdout_lines }}"
 
-      - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Set warning count"
-        ansible.builtin.import_tasks: warning_facts.yml
-  vars:
-      warn_control_id: '3.5.1.6'
-  when:
-      - ubtu22cis_rule_3_5_1_6
-  tags:
-      - level1-server
-      - level1-workstation
-      - manual
-      - audit
-      - rule_3.5.1.6
-      - ufw
+#       - name: "3.5.1.6 | AUDIT | Ensure ufw firewall rules exist for all open ports | Set warning count"
+#         ansible.builtin.import_tasks: warning_facts.yml
+#   vars:
+#       warn_control_id: '3.5.1.6'
+#   when:
+#       - ubtu22cis_rule_3_5_1_6
+#   tags:
+#       - level1-server
+#       - level1-workstation
+#       - manual
+#       - audit
+#       - rule_3.5.1.6
+#       - ufw
 
 - name: "3.5.1.7 | PATCH | Ensure ufw default deny firewall policy"
   community.general.ufw:

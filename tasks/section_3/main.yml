@@ -1,7 +1,7 @@
 ---
 
-- name: "SECTION | 3.1 | Disable unused network protocols and devices"
-  ansible.builtin.import_tasks: cis_3.1.x.yml
+# - name: "SECTION | 3.1 | Disable unused network protocols and devices"
+#   ansible.builtin.import_tasks: cis_3.1.x.yml
 
 - name: "SECTION | 3.2 | Network Parameters Host Only"
   ansible.builtin.import_tasks: cis_3.2.x.yml
@@ -9,8 +9,8 @@
 - name: "SECTION | 3.3 | Network Parameters Host and Router"
   ansible.builtin.import_tasks: cis_3.3.x.yml
 
-- name: "SECTION | 3.4 | Uncommon Network Protocols"
-  ansible.builtin.import_tasks: cis_3.4.x.yml
+# - name: "SECTION | 3.4 | Uncommon Network Protocols"
+#   ansible.builtin.import_tasks: cis_3.4.x.yml
 
 - name: "SECTION | 3.5.1 | UFW Firewall Configuration"
   ansible.builtin.import_tasks: cis_3.5.1.x.yml

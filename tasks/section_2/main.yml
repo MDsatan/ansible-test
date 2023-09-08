@@ -24,5 +24,5 @@
 - name: "SECTION | 2.2.x | Service Clients"
   ansible.builtin.import_tasks: cis_2.3.x.yml
 
-- name: "SECTION | 2.3.x | Ensure nonessential services are removed or masked"
-  ansible.builtin.import_tasks: cis_2.4.yml
+# - name: "SECTION | 2.3.x | Ensure nonessential services are removed or masked"
+#   ansible.builtin.import_tasks: cis_2.4.yml
