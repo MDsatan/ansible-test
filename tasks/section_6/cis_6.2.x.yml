@@ -473,46 +473,46 @@
       - rule_6.2.16
       - user
 
-- name: "6.2.17 | PATCH | Ensure users' dot files are not group or world writable"
-  block:
-      - name: "6.2.17 | AUDIT | Ensure users' dot files are not group or world-writable | Check for files"
-        ansible.builtin.shell: find /home/ -name "\.*" -perm /g+w,o+w
-        changed_when: false
-        failed_when: false
-        check_mode: false
-        register: ubtu22cis_6_2_17_audit
+# - name: "6.2.17 | PATCH | Ensure users' dot files are not group or world writable"
+#   block:
+#       - name: "6.2.17 | AUDIT | Ensure users' dot files are not group or world-writable | Check for files"
+#         ansible.builtin.shell: find /home/ -name "\.*" -perm /g+w,o+w
+#         changed_when: false
+#         failed_when: false
+#         check_mode: false
+#         register: ubtu22cis_6_2_17_audit
 
-      - name: "6.2.17 | AUDIT | Ensure users' dot files are not group or world-writable | Warning on files found"
-        ansible.builtin.debug:
-            msg:
-                - "Warning!! You have group or world-writable dot files on your system and have configured for manual intervention"
-        when:
-            - ubtu22cis_6_2_17_audit.stdout | length > 0
-            - ubtu22cis_dotperm_ansiblemanaged
+#       - name: "6.2.17 | AUDIT | Ensure users' dot files are not group or world-writable | Warning on files found"
+#         ansible.builtin.debug:
+#             msg:
+#                 - "Warning!! You have group or world-writable dot files on your system and have configured for manual intervention"
+#         when:
+#             - ubtu22cis_6_2_17_audit.stdout | length > 0
+#             - ubtu22cis_dotperm_ansiblemanaged
 
-      - name: "6.2.17 | PATCH | Ensure users' dot files are not group or world writable | Set warning count"
-        ansible.builtin.import_tasks: warning_facts.yml
-        when:
-            - ubtu22cis_6_2_17_audit.stdout | length > 0
-            - ubtu22cis_dotperm_ansiblemanaged
+#       - name: "6.2.17 | PATCH | Ensure users' dot files are not group or world writable | Set warning count"
+#         ansible.builtin.import_tasks: warning_facts.yml
+#         when:
+#             - ubtu22cis_6_2_17_audit.stdout | length > 0
+#             - ubtu22cis_dotperm_ansiblemanaged
 
-      - name: "6.2.17 | PATCH | Ensure users' dot files are not group or world-writable | Changes files if configured"
-        ansible.builtin.file:
-            path: '{{ item }}'
-            mode: go-w
-        with_items: "{{ ubtu22cis_6_2_17_audit.stdout_lines }}"
-        when:
-            - ubtu22cis_6_2_17_audit.stdout | length > 0
-            - ubtu22cis_dotperm_ansiblemanaged
-  vars:
-      warn_control_id: '6.2.17'
-  when:
-      - ubtu22cis_rule_6_2_17
-      - ubtu22cis_disruption_high
-  tags:
-      - level1-server
-      - level1-workstation
-      - automated
-      - patch
-      - rule_6.2.17
-      - user
+#       - name: "6.2.17 | PATCH | Ensure users' dot files are not group or world-writable | Changes files if configured"
+#         ansible.builtin.file:
+#             path: '{{ item }}'
+#             mode: go-w
+#         with_items: "{{ ubtu22cis_6_2_17_audit.stdout_lines }}"
+#         when:
+#             - ubtu22cis_6_2_17_audit.stdout | length > 0
+#             - ubtu22cis_dotperm_ansiblemanaged
+#   vars:
+#       warn_control_id: '6.2.17'
+#   when:
+#       - ubtu22cis_rule_6_2_17
+#       - ubtu22cis_disruption_high
+#   tags:
+#       - level1-server
+#       - level1-workstation
+#       - automated
+#       - patch
+#       - rule_6.2.17
+#       - user

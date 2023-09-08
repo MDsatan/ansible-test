@@ -1,26 +1,26 @@
 ---
 
-- name: "1.1.2.1 | AUDIT | Ensure /tmp is a separate partition"
-  block:
-      - name: "1.1.2.1 | AUDIT | Ensure /tmp is a separate partition | Absent"
-        ansible.builtin.debug:
-            msg: "Warning!! {{ required_mount }} doesn't exist. This is a manual task"
+# - name: "1.1.2.1 | AUDIT | Ensure /tmp is a separate partition"
+#   block:
+#       - name: "1.1.2.1 | AUDIT | Ensure /tmp is a separate partition | Absent"
+#         ansible.builtin.debug:
+#             msg: "Warning!! {{ required_mount }} doesn't exist. This is a manual task"
 
-      - name: "1.1.2.1 | WARN | Ensure /tmp is a separate partition | warn_count"
-        ansible.builtin.import_tasks: warning_facts.yml
-  vars:
-      warn_control_id: '1.1.2.1'
-      required_mount: '/tmp'
-  when:
-      - required_mount not in mount_names
-      - ubtu22cis_rule_1_1_2_1
-  tags:
-      - level1-server
-      - level1-workstation
-      - audit
-      - mounts
-      - rule_1.1.2.1
-      - tmp
+#       - name: "1.1.2.1 | WARN | Ensure /tmp is a separate partition | warn_count"
+#         ansible.builtin.import_tasks: warning_facts.yml
+#   vars:
+#       warn_control_id: '1.1.2.1'
+#       required_mount: '/tmp'
+#   when:
+#       - required_mount not in mount_names
+#       - ubtu22cis_rule_1_1_2_1
+#   tags:
+#       - level1-server
+#       - level1-workstation
+#       - audit
+#       - mounts
+#       - rule_1.1.2.1
+#       - tmp
 
 - name: |
     "1.1.2.2 | PATCH | Ensure nodev option set on /tmp partition | tmp_systemd"

@@ -30,8 +30,8 @@
 # - name: "SECTION | 1.1.10 | Disable USB storage"
 #   ansible.builtin.import_tasks: cis_1.1.10.yml
 
-- name: "SECTION | 1.2 | Configure Software Updates"
-  ansible.builtin.import_tasks: cis_1.2.x.yml
+# - name: "SECTION | 1.2 | Configure Software Updates"
+#   ansible.builtin.import_tasks: cis_1.2.x.yml
 
 - name: "SECTION | 1.3. | Filesystem Integrity Checking"
   ansible.builtin.import_tasks: cis_1.3.x.yml
