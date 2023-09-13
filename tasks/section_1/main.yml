@@ -33,8 +33,8 @@
 # - name: "SECTION | 1.2 | Configure Software Updates"
 #   ansible.builtin.import_tasks: cis_1.2.x.yml
 
-# - name: "SECTION | 1.3. | Filesystem Integrity Checking"
-#   ansible.builtin.import_tasks: cis_1.3.x.yml
+- name: "SECTION | 1.3. | Filesystem Integrity Checking"
+  ansible.builtin.import_tasks: cis_1.3.x.yml
 
 - name: "SECTION | 1.4 | Secure Boot Settings"
   ansible.builtin.import_tasks: cis_1.4.x.yml
@@ -52,5 +52,5 @@
   ansible.builtin.import_tasks: cis_1.8.x.yml
   when: "'gdm3' in ansible_facts.packages"
 
-- name: "SECTION | 1.9 | Ensure updates, patches, and additional security software are installed"
-  ansible.builtin.import_tasks: cis_1.9.yml
+# - name: "SECTION | 1.9 | Ensure updates, patches, and additional security software are installed"
+#   ansible.builtin.import_tasks: cis_1.9.yml
