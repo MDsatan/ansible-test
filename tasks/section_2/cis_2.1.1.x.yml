@@ -1,5 +1,3 @@
----
-
 - name: "2.1.1.1 | PATCH | Ensure a single time synchronization daemon is in use"
   block:
       - name: "2.1.1.1 | PATCH | Ensure a single time synchronization daemon is in use | Pkg installed"
@@ -18,11 +16,12 @@
 
       - name: "2.1.1.1 | PATCH | Ensure a single time synchronization daemon is in use | mask service"
         ansible.builtin.service:
-            name: chrony.service
+            name: systemd-timesyncd
             state: stopped
             enabled: false
             masked: true
-        when: ubtu22cis_time_sync_tool != "chrony"
+            daemon_reload: true
+        when: ubtu22cis_time_sync_tool != "systemd-timesyncd"
   when:
       - ubtu22cis_rule_2_1_1_1
   tags:
