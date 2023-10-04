@@ -34,11 +34,11 @@
 # Adding the allow OpenSSH rule while enabling ufw to allow ansible to run after enabling
 - name: "3.5.1.3 | PATCH | Ensure ufw service is enabled"
   block:
-      - name: "3.5.1.3 | PATCH | Ensure ufw service is enabled | ssh port enabled"
-        community.general.ufw:
-            rule: allow
-            name: OpenSSH
-            state: enabled
+    #   - name: "3.5.1.3 | PATCH | Ensure ufw service is enabled | ssh port enabled" <-- Disabled due OpenSSH server not being installed
+    #     community.general.ufw:
+    #         rule: allow
+    #         name: OpenSSH
+    #         state: enabled
 
       - name: "3.5.1.3 | PATCH | Ensure ufw service is enabled | service"
         ansible.builtin.systemd:
