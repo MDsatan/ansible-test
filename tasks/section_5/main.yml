@@ -3,10 +3,10 @@
 - name: "SECTION | 5.1 | Configure time-based job schedulers"
   ansible.builtin.import_tasks: cis_5.1.x.yml
 
-- name: "SECTION | 5.2 | Configure sudo"
-  ansible.builtin.import_tasks: cis_5.2.x.yml
+# - name: "SECTION | 5.2 | Configure SSH Server" <<- OpenSSH server is not installed
+#   ansible.builtin.import_tasks: cis_5.2.x.yml
 
-- name: "SECTION | 5.3 | Configure SSH Server"
+- name: "SECTION | 5.3 | Configure sudo"
   ansible.builtin.import_tasks: cis_5.3.x.yml
 
 - name: "SECTION | 5.4.x | User PAM"
